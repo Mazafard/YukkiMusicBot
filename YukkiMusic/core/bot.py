@@ -66,6 +66,7 @@ class YukkiBot(Client):
         a = await self.get_chat_member(config.LOG_GROUP_ID, self.id)
         print('++++++++++++++++')
         print(a.status)
+        print(type(a.status))
         print('++++++++++++++++')
         if a.status != "ChatMemberStatus.ADMINISTRATOR":
             LOGGER(__name__).error(
