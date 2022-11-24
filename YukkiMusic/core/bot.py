@@ -68,7 +68,7 @@ class YukkiBot(Client):
         print(a.status)
         print(type(a.status))
         print('++++++++++++++++')
-        if a.status != "ChatMemberStatus.ADMINISTRATOR":
+        if a.status != ChatMemberStatus.ADMINISTRATOR:
             LOGGER(__name__).error(
                 "Please promote Bot as Admin in Logger Group"
             )
